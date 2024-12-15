@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Ceramic Prompt Roller</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #007BFF;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .prompt {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Random Ceramic Prompt Roller</h1>
+        <p>Click the button to roll the dice and get a random prompt for your pottery practice.</p>
+        <button onclick="rollPrompt()">Roll the Dice</button>
+        <div class="prompt" id="prompt">🎲 Roll to get a prompt!</div>
+    </div>
+
+    <script>
+        const prompts = [
+            "Center off-center.",
+            "Throw as fast as you can.",
+            "Make it taller than feels stable.",
+            "Use a tool you've never used before.",
+            "Let gravity decide.",
+            "Double the weight of the clay.",
+            "Finish without touching the wheel.",
+            "Embrace the wobble.",
+            "Pierce it excessively.",
+            "Distort a perfect shape.",
+            "Stack thrown forms unexpectedly.",
+            "Cut it in half and rearrange.",
+            "Make it unrecognizable.",
+            "Add more handles than it needs.",
+            "Expose the layers.",
+            "Texture every surface.",
+            "Throw with your non-dominant hand.",
+            "Create a shape that feels awkward.",
+            "Start with a shape you dislike.",
+            "Push the clay beyond its limits.",
+            "Work entirely in reverse.",
+            "Sculpt from thrown remnants.",
+            "Combine two unrelated techniques.",
+            "Leave visible fingerprints.",
+            "Celebrate imperfections.",
+            "Make it deliberately asymmetrical.",
+            "Turn it upside down.",
+            "Add holes where they don’t belong.",
+            "Exaggerate one element (lip, foot, handle).",
+            "Expand until collapse.",
+            "Carve something delicate into something robust.",
+            "Introduce randomness into the process.",
+            "Use slip in an uncontrolled way.",
+            "Make the base the focal point.",
+            "Create a surface that looks fragile.",
+            "Imitate a non-ceramic material.",
+            "Break it and reassemble.",
+            "Expose the inner structure.",
+            "Chase the imperfections.",
+            "Add something from nature.",
+            "Stretch until it tears.",
+            "Make it hollow in unexpected ways.",
+            "Throw blindfolded.",
+            "Incorporate another artist’s influence.",
+            "Flatten a form and reshape it.",
+            "Turn the surface into a story.",
+            "Add too much glaze intentionally.",
+            "Build multiple pieces that depend on each other.",
+            "Create something that feels heavy but isn’t.",
+            "Make the clay do what it resists.",
+            "Decorate with something unconventional.",
+            "Focus on one repeated mark.",
+            "Work until you feel you’ve overdone it.",
+            "Combine hard edges with softness.",
+            "Create a form that could nest.",
+            "Imagine it underwater.",
+            "Throw with unevenly prepared clay.",
+            "Let something dry halfway and alter it.",
+            "Turn a cylinder into a curve.",
+            "Make a shape inspired by music.",
+            "Erase all symmetry.",
+            "Treat the surface as a canvas.",
+            "Leave one area raw.",
+            "Add unexpected weight.",
+            "Stop halfway and consider it finished.",
+            "Play with translucency.",
+            "Create something with motion in mind.",
+            "Work against the wheel's rotation.",
+            "Add elements that seem excessive.",
+            "Make a surface that's uncomfortable to touch.",
+            "Focus entirely on the rim.",
+            "Forget functionality.",
+            "Imitate a broken artifact.",
+            "Create a piece for a fictional character.",
+            "Use repetition to an extreme.",
+            "Introduce balance that seems impossible.",
+            "Make it interact with light.",
+            "Imagine its sound if tapped.",
+            "Carve deeply and inconsistently.",
+            "Embrace thickness.",
+            "Think in sharp angles.",
+            "Make it feel alive.",
+            "Interrupt smoothness with harsh marks.",
+            "Imagine it being held by a giant.",
+            "Add a feature that’s purely playful.",
+            "Work as small as possible.",
+            "Emphasize the negative space.",
+            "Let the clay collapse deliberately.",
+            "Turn a thrown object into a slab project.",
+            "Imitate something edible.",
+            "Let one part dominate the whole.",
+            "Challenge the idea of balance.",
+            "Treat glazing as part of the form.",
+            "Allow a section to remain unfinished.",
+            "Use more clay than necessary.",
+            "Explore the idea of layers.",
+            "Imagine it fitting into a specific place.",
+            "Incorporate randomness in decoration.",
+            "Let water be your collaborator.",
+            "Imagine the piece in ruins."
+        ];
+
+        function rollPrompt() {
+            const randomIndex = Math.floor(Math.random() * prompts.length);
+            document.getElementById('prompt').textContent = prompts[randomIndex];
+        }
+    </script>
+</body>
+</html>
