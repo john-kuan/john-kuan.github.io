@@ -3,77 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Potter's Oblique</title>
+    <title>Random Ceramic Prompt Roller</title>
     <style>
-        :root {
-            --primary-color: #007BFF;
-            --primary-color-hover: #0056b3;
-            --background-color: #f9f9f9;
-            --text-color: #333;
-            --secondary-text-color: #666;
+        /* ... (Your existing CSS) ... */
+        .brian-eno-image { /* Style for the image container */
+            text-align: center; /* Center the image */
+            margin-top: 20px; /* Add some spacing above */
+            margin-bottom: 20px;
         }
 
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 20px;
-            background-color: var(--background-color);
-            color: var(--text-color);
-        }
-        .container {
-            max-width: 600px;
-            margin: auto;
-            padding: 20px;
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        button {
-            padding: 10px 20px;
-            font-size: 16px;
-            color: white;
-            background-color: var(--primary-color);
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: var(--primary-color-hover);
-        }
-        .prompt {
-            margin-top: 20px;
-            font-size: 36px;
-            font-weight: bold;
-            color: var(--text-color);
-        }
-        .info {
-            margin-top: 30px;
-            font-size: 14px;
-            color: var(--secondary-text-color);
-            text-align: left;
-        }
-        h1, h2, p {
-            color: var(--secondary-text-color);
-        }
-        .footer {
-            font-size: 10px;
-            color: #666;
-            margin-top: 20px;
-            text-align: center;
-        }
-        a {
-            color: #007BFF;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
+        .brian-eno-image img {
+            max-width: 300px; /* Set a maximum width */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 10px; /* Optional: Add rounded corners */
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
         }
     </style>
 </head>
 <body>
     <main>
         <div class="container">
-            <h1>The Potter's Oblique</h1>
+            <h1>Random Ceramic Prompt Roller</h1>
             <p>Click the button to roll the dice and get a random prompt for your pottery practice.</p>
             <button onclick="rollPrompt()">Roll the Dice</button>
             <div class="prompt" id="prompt">🎲 Roll to get a prompt!</div>
@@ -84,13 +34,18 @@
                 <p><a href="https://en.wikipedia.org/wiki/Brian_Eno" target="_blank" rel="noopener noreferrer">Brian Eno</a> is a renowned musician, producer, and visual artist, celebrated for his pioneering work in ambient music and innovative approaches to art and sound. Eno has collaborated with numerous influential artists and continues to inspire creative disciplines worldwide.</p>
                 <h2>Purpose of This Tool</h2>
                 <p>This ceramic prompt roller is inspired by the spirit of the <a href="https://en.wikipedia.org/wiki/Oblique_Strategies" target="_blank" rel="noopener noreferrer">Oblique Strategies</a>, designed to challenge traditional approaches and spark creativity in pottery. By embracing randomness and experimentation, this tool encourages ceramicists to explore new ideas, overcome creative blocks, and expand their artistic horizons.</p>
+                <p>Adaptation by <a href="https://www.instagram.com/johnkuan" target="_blank" rel="noopener noreferrer">John Kuan</a>, Development by ChatGPT.</p>
             </div>
         </div>
     </main>
-    <div class="footer">
-        This website was created by <a href="https://www.instagram.com/johnkuan" target="_blank" rel="noopener noreferrer">John Kuan</a>, who got really bored of throwing boring cylindrical forms and adapted <a href="https://en.wikipedia.org/wiki/Brian_Eno" target="_blank" rel="noopener noreferrer">Brian Eno's</a> <a href="https://en.wikipedia.org/wiki/Oblique_Strategies" target="_blank" rel="noopener noreferrer">Oblique Strategies</a>. The development and generation of specific content were assisted by ChatGPT, an AI language model. While all reasonable efforts have been made to ensure accuracy, completeness, and reliability, the information provided may not be exhaustive or free from errors. The user assumes full responsibility for any reliance on the information presented.
+    <div class="brian-eno-image">
+        <a href="https://en.wikipedia.org/wiki/Brian_Eno" target="_blank" rel="noopener noreferrer">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Brian_Eno_by_Philip_May_1974.jpg/800px-Brian_Eno_by_Philip_May_1974.jpg" alt="Brian Eno">
+        </a>
     </div>
-
+    <div class="footer">
+        This website was created by <a href="https://www.instagram.com/johnkuan" target="_blank" rel="noopener noreferrer">John Kuan</a>, who conceived the original concept and adapted <a href="https://en.wikipedia.org/wiki/Brian_Eno" target="_blank" rel="noopener noreferrer">Brian Eno's</a> <a href="https://en.wikipedia.org/wiki/Oblique_Strategies" target="_blank" rel="noopener noreferrer">Oblique Strategies</a>. The development and generation of specific content were assisted by ChatGPT, an AI language model. While all reasonable efforts have been made to ensure accuracy, completeness, and reliability, the information provided may not be exhaustive or free from errors. The user assumes full responsibility for any reliance on the information presented.
+    </div>
     <script>
         const prompts = [
             "Center off-center.",
